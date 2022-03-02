@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScrobbleMode")]
-[assembly: AssemblyDescription("Opps")]
+[assembly: AssemblyDescription("Automatically jump to next track once the current playing track has been scrobbled by last.fm. ")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ScrobbleModeDll")]
