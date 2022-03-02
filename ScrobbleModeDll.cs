@@ -113,8 +113,9 @@ namespace MusicBeePlugin
                     switch (mbApiInterface.Player_GetPlayState())
                     {
                         case PlayState.Playing:
+/*                          Automatically refresh track duration info when track changed. Also refresh when resumes the track. */
                             TrackDuration = mbApiInterface.NowPlaying_GetDuration()/1000;
-/*                            Debug.WriteLine("Debug Information-Product Starting " + TrackDuration);*/
+/*                          Debug.WriteLine("Debug Information-Product Starting " + TrackDuration);*/
                             playingTimer.Start();
                             break;
                         case PlayState.Paused:
@@ -124,10 +125,12 @@ namespace MusicBeePlugin
                             playingTimer.Stop();
                             break;
                     }
-                    break;
+                    break; 
+/*              Track changing could be omitted. */
                 case NotificationType.TrackChanging:
                     playingTimer.Stop();
                     break;
+/*              When the track has changed (whether it has changed to the same one or no), Timer will reset after a 0.5s delay (Maybe could be fewer). */                    
                 case NotificationType.TrackChanged:
                     Thread.Sleep(500);
                     playingTimer.Start();
