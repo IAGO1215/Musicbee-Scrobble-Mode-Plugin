@@ -4,4 +4,4 @@ A plugin developed for people who listen to music for last.fm scrobbles. Musicbe
 
 ***Warning: This plugin will affect skip counts.***
 
-***Warning: Remember to disable this plugin in "Preferences -> Plugin" when you want to enjoy entire tracks.***
+***Warning: Remember to disable this plugin in "Preferences -> Plugin" when you want to enjoy entire tracks. Restart of musicbee might be required after plugin being disabled. ***
